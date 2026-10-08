@@ -1,0 +1,209 @@
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            background-color: #ffe6e6;
+            font-family: "Times New Roman", serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 70px;
+        }
+
+        form {
+            width: 900px;
+            margin: auto;
+            font-size: 25px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            width: 270px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 560px;
+            height: 38px;
+            font-size: 18px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        .small {
+            width: 90px !important;
+        }
+
+        .medium {
+            width: 270px !important;
+        }
+
+        .radio,
+        .check {
+            width: auto !important;
+            height: auto !important;
+        }
+
+        .date input {
+            margin-right: 8px;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 5px 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <!-- Roll Number -->
+        <div class="row">
+            <label>Roll no. :</label>
+            <input type="text">
+        </div>
+
+        <!-- Student Name -->
+        <div class="row">
+            <label>Student name :</label>
+
+            <input class="medium" type="text" placeholder="First Name">
+
+            <span>&nbsp; - &nbsp;</span>
+
+            <input class="medium" type="text" placeholder="Last Name">
+        </div>
+
+        <!-- Father's Name -->
+        <div class="row">
+            <label>Father's name :</label>
+            <input type="text">
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="row">
+            <label>Date of birth :</label>
+
+            <input class="small" type="text" placeholder="Day">
+
+            <span>&nbsp; - &nbsp;</span>
+
+            <input class="small" type="text" placeholder="Month">
+
+            <span>&nbsp; - &nbsp;</span>
+
+            <input class="medium" type="text" placeholder="Year">
+
+            <i>&nbsp; (DD-MM-YYYY)</i>
+        </div>
+
+        <!-- Mobile -->
+        <div class="row">
+            <label>Mobile no. :</label>
+
+            <input class="small" type="text" value="+91">
+
+            <span>&nbsp; - &nbsp;</span>
+
+            <input type="text">
+        </div>
+
+        <!-- Email -->
+        <div class="row">
+            <label>Email id :</label>
+            <input type="email">
+        </div>
+
+        <!-- Password -->
+        <div class="row">
+            <label>Password :</label>
+            <input type="password">
+        </div>
+
+        <!-- Gender -->
+        <div class="row">
+            <label>Gender :</label>
+
+            <input class="radio" type="radio" name="gender">
+            <span>&nbsp;Male&nbsp;&nbsp;</span>
+
+            <input class="radio" type="radio" name="gender">
+            <span>&nbsp;Female</span>
+        </div>
+
+        <!-- Department -->
+        <div class="row">
+            <label>Department :</label>
+
+            <input class="check" type="checkbox"> CSE&nbsp;&nbsp;
+            <input class="check" type="checkbox"> IT&nbsp;&nbsp;
+            <input class="check" type="checkbox"> ECE&nbsp;&nbsp;
+            <input class="check" type="checkbox"> Civil&nbsp;&nbsp;
+            <input class="check" type="checkbox"> Mech
+        </div>
+
+        <!-- Course -->
+        <div class="row">
+            <label>Course :</label>
+
+            <select>
+                <option>---------------- Select Current Course's ----------------</option>
+                <option>BCA</option>
+                <option>B.Sc Computer Science</option>
+                <option>B.Tech</option>
+                <option>MCA</option>
+            </select>
+        </div>
+
+        <!-- Student Photo -->
+        <div class="row">
+            <label>Student photo :</label>
+            <input type="file">
+        </div>
+
+        <!-- City -->
+        <div class="row">
+            <label>City :</label>
+            <input type="text">
+        </div>
+
+        <!-- Address -->
+        <div class="row">
+            <label>Address :</label>
+            <textarea></textarea>
+        </div>
+
+        <!-- Register Button -->
+        <div class="button">
+            <button type="submit">Register</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
